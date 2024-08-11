@@ -1,3 +1,45 @@
+# Project Theme: Commercial Flight Delays
+
+# Datasets used: 
+https://www.kaggle.com/datasets/oleksiimartusiuk/bts-january-2024-commercial-flights-data?select=T_ONTIME_MARKETING.csv
+https://www.geoapify.com/ [API]
+
+# Project Description
+The dataset above catalogs data concerning commercial flights in the US in the month of January 2024, obtained from the Bureau of Transportation Statistics. This data includes origin and destination cities, along with distances between them; times for departure, taxi, wheels-off and on, and arrival, with associated delays, the causes of delays, and whether each flight was canceled or diverted. Our goal with this data would be to look at the following for five cities with international airports: 
+
+Comparison of reason for delay
+Visual: Bar chart
+Delay Types: All 5 (NAS & Other)
+
+Time of delay (length)
+Binned to different intervals (0-15 min., 15-30 min., 30-1 hr., 1+ hrs.)
+Departures from target city & Arrivals to target city
+Visual: Stacked Bar chart
+
+Cancellations vs. delays vs. diverted vs. early/on time
+Visual: Pie chart
+*Note that canceled and diverted may be too small to have separate; combine into one if necessary
+
+Geoapify full dataset for location data
+Visual: Geoapify heat map
+
+Compiled report of city vs. city for data questions
+
+# Notable Sources
+https://stackoverflow.com/questions/24251219/pandas-read-csv-low-memory-and-dtype-options (read_csv error clearing)
+https://www.geeksforgeeks.org/replace-nan-values-with-zeros-in-pandas-dataframe/ (NaN data filling)
+https://aspm.faa.gov/aspmhelp/index/Types_of_Delay.html [explanation for presentation]
+
+# Contributions
+This project was a collaborative effort of the following individuals: Andrew Pohle, Bryan Thomas, Caitlin McMahill, Jessica Maranto, and Lauren Graves. 
+The code files contained in the folder labeled "Code_Files" were written as a collaboration amongst this group. The code may be altered or have slight differences based on the individual's data set. Caitlin M. created the code for our GeoApify heat map and visual. All other visualizations were the result of each individual's code and data. Andrew P. wrote our analysis and conclusion based on collaborative findings with his peers. Please reference our dataset resources and presentation resources for the source of additional information we obtained and used during the presentation. 
+
+# Files
+The coding files can be found in the folder labeled "Code_Files". Each is labeled with the city that the code explores for flight data.
+The visualizations are in a folder labeled "Visualizations". 
+The slide presentation used is in the folder labeled "Presentation". 
+The data set csv file is labeled "Resources.zip". 
+
 # Project1 Data Analysis
 
 For this analysis, we narrowed down our main questions with airport delays into 3 main questions, which would then dictate what data would be analyzed from the database we obtained. First, how many delays or canceled flights occur in a typical month, which would analyze the reliability of flights in and out of each analyzed airport. Secondly, how frequently do certain categories of issues occur, which could identify shortcomings within certain airports’ operations. And finally, how long are flights usually delayed for, to give patrons and airports estimations on the impact that these delays can have.
